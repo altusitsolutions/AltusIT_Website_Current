@@ -105,33 +105,30 @@
                 <div class="row contact_row">
                     <div class="col-lg-8 contact_col justify-content-center">
                     
-                        <h3 class="success_message text-center">Thanks! We'll be in touch.</h3>
+                        <!-- <h3 class="success_message text-center">Thanks! We'll be in touch.</h3> -->
 
-                        <form class="px-5" method="POST" id="contact">
+                        <form class="px-5" method="POST" id="contact" name="contact" data-netlify="true">
                             <p class="text-center">
                                 Fill out the form below to get in touch with us.<br>
                                 Fields marked with * are required
                             </p>
 
                             <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Please enter your name" pattern="[a-zA-Z ,.'-]+" value="<?= $user_name ?>" required>
-                            <div class="error_message mb-4"><?= $name_error ?></div>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Please enter your name" pattern="[a-zA-Z ,.'-]+"  required>
 
                             <label for="company">Company</label>
-                            <input type="text" id="company" name="company" class="form-control" placeholder="Company Name" value="<?= $user_company ?>">
-                            <div class="error_message mb-4"><?= $company_error ?></div>
+                            <input type="text" id="company" name="company" class="form-control" placeholder="Company Name">
 
                             <label for="phone">Phone Number</label>
-                            <input type="text" id="phone" name="phone" class="form-control" placeholder="(519) 123-4567" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" value="<?= $user_phone ?>">
-                            <div class="error_message mb-4"><?= $phone_error ?></div>
+                            <input type="text" id="phone" name="phone" class="form-control" placeholder="(519) 123-4567" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
 
                             <label for="email">Email Address *</label>
-                            <input type="text" id="email" name="email" class="form-control" placeholder="example@altusit.ca" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" value="<?= $user_email ?>" required>
-                            <div class="error_message mb-4"><?= $email_error ?></div>
+                            <input type="text" id="email" name="email" class="form-control" placeholder="example@altusit.ca" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                         
                             <label for="message">Message *</label>
-                            <textarea class="form-control rounded-0" id="message" name="message" rows="3" placeholder="Your Message"><?= $user_message ?></textarea>
-                            <div class="error_message mb-4"><?= $message_error ?></div>
+                            <textarea class="form-control rounded-0" id="message" name="message" rows="3" placeholder="Your Message"></textarea>
+
+                            <input type="hidden" name="form-name" value="contact">
                         
                             <button class="btn btn-block btn_full" type="submit">Send</button>
                         </form>
