@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://altusit.ca/</title>
+  <link>https://altusit.ca/</link>
+
+<item>
+     <link>https://altusit.ca/</link>
+     <title>Altus IT Solutions - Home</title>
+     <description>Altus IT Solutions is Windsor's newest home &amp; small business IT services provider. Let us work to create a custom IT solution built to fit your needs.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://altusit.ca/about-us</link>
+     <title>About Us - Altus IT Solutions</title>
+     <description>Learn more about Altus IT Solutions and what makes us the best choice for your home or small business.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://altusit.ca/services</link>
+     <title>Services - Altus IT Solutions</title>
+     <description>Read through the different IT services we offer and see how we can help your home or small business today.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://altusit.ca/previous-work</link>
+     <title>Previous Work - Altus IT Solutions</title>
+     <description>Check out some of the other projects Altus IT Solutions has worked on around Windsor-Essex County.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://altusit.ca/contact</link>
+     <title>Contact Us - Altus IT Solutions</title>
+     <description>Contact us to discuss your home and small business IT needs.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

@@ -1,0 +1,71 @@
+/* 
+------------
+HERO SECTION
+------------
+*/
+.page_title_container {
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.5))),url('../pictures/404/hero.jpg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../pictures/404/hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../pictures/404/hero.jpg');
+    background-position: left;
+}
+
+.section_hero {
+    margin-bottom: 50px;
+}
+
+/* 
+------------
+SECTION 1
+------------
+*/
+.section_title {margin: 50px 0 30px 0;}
+
+.main_text {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.nav_container {
+    -webkit-box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.page_wrap {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.puppy_col {text-align: right;}
+
+.text_col {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.vert_row {flex-direction: column;}
+
+.title {font-size: 3em;}
+.text {font-weight: 300;}
+
+section.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .puppy_col {text-align: center;}
+    .text_col {text-align: center;}
+}
+
+@media (max-width: 768px) {
+    section.footer {position: relative;}
+}

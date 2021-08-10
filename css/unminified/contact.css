@@ -1,0 +1,100 @@
+/*
+------------------------
+HERO SECTION
+------------------------
+*/
+.page_title_container {
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))),url('../pictures/contact/hero.jpg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../pictures/contact/hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../pictures/contact/hero.jpg');
+    background-position: center right;
+}
+.section_hero {margin-bottom: 50px;}
+
+/*
+------------------------
+SECTION 1 
+------------------------
+*/
+
+.contact_row {-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+
+.contact_info_col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-left: 1px solid #505050;
+}
+
+.contact_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.info_title {font-weight: 500;}
+
+.contact_socials {
+    color: #076AAF;
+    font-size: 1.5em;
+}
+
+.map_row {padding-top: 20px;}
+.info_categories i {font-size: 1.5em;}
+.contact_socials:hover {color: #505050;}
+iframe {
+    width: 100%;
+    max-height: 300px;
+}
+
+.form-control:focus{
+    -webkit-box-shadow:none;
+            box-shadow:none;
+    border-color:var(--font-hover-color);
+    outline:none;
+}
+
+.form-control:invalid:focus {
+    border: 2px solid red;
+    background-color: rgba(255,0,0,0.05);
+}
+
+.form-control:valid:focus {
+    border: 2px solid green;
+    background-color: rgba(0,128,0,0.05);
+}
+
+.error_message {
+    font-size: 0.8em;
+    color: red;
+}
+
+.success_message {color: green;}
+
+@media (max-width: 992px) {
+
+    #contact {padding: 0 !important;}
+
+    .contact_info_col {border: none;}
+
+    .contact_info_col {
+        text-align: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 1px solid #505050;
+    }
+}

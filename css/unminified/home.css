@@ -1,0 +1,498 @@
+/* 
+------------
+HERO SECTION
+------------
+*/
+
+/* Hero Background & Container */
+.section_hero {
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.5))),url('../pictures/home/hero/hero.jpg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)),url('../pictures/home/hero/hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)),url('../pictures/home/hero/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 90%;
+    height: 100vh;
+}
+
+/* Different logos for mobile/tablet and desktops */
+.hero_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.main_logo {
+    max-width: 350px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.mobile_hero_text {
+    color: #fcfcfc;
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    max-width: 500px;
+    text-shadow: 2px 2px 3px #000;
+}
+
+/* Styling for animated down arrow */
+.arrow_down{
+    -webkit-animation: bounce ease-in 3s;
+            animation: bounce ease-in 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-align: center;
+}
+
+@-webkit-keyframes bounce{
+    0% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    10% {
+        -webkit-transform:  translate(0px,-10px)  ;
+                transform:  translate(0px,-10px)  ;
+    }
+    20% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    30% {
+        -webkit-transform:  translate(0px,-10px)  ;
+                transform:  translate(0px,-10px)  ;
+    }
+    40% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    50% {
+        -webkit-transform:  translate(0px,-10px)  ;
+                transform:  translate(0px,-10px)  ;
+    }
+    60% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    70% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    80% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    90% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    100% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+}
+
+@keyframes bounce{
+    0% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    10% {
+        -webkit-transform:  translate(0px,-10px)  ;
+                transform:  translate(0px,-10px)  ;
+    }
+    20% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    30% {
+        -webkit-transform:  translate(0px,-10px)  ;
+                transform:  translate(0px,-10px)  ;
+    }
+    40% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    50% {
+        -webkit-transform:  translate(0px,-10px)  ;
+                transform:  translate(0px,-10px)  ;
+    }
+    60% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    70% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    80% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    90% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+    100% {
+        -webkit-transform:  translate(0px,0px)  ;
+                transform:  translate(0px,0px)  ;
+    }
+}
+
+/* 
+------------
+SECTION 1
+------------
+*/
+
+.s1_image img {
+    max-width: 350px;
+    height: auto;
+}
+
+#s1_image {
+    width: 100%;
+}
+
+/* 
+------------
+SECTION 2
+------------
+*/
+
+.nav-pills-custom .nav-link {
+    color: #505050;
+    background: #fff;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #fcfcfc !important;
+    background: -webkit-gradient(linear,left top, right top,from(#3BA4EF), to(#076AAF));
+    background: -o-linear-gradient(left,#3BA4EF, #076AAF);
+    background: linear-gradient(to right,#3BA4EF, #076AAF);
+}
+
+.nav-pills-custom .nav-link:hover {
+    color: #fcfcfc;
+    background: -webkit-gradient(linear,left top, right top,from(#3BA4EF), to(#076AAF));
+    background: -o-linear-gradient(left,#3BA4EF, #076AAF);
+    background: linear-gradient(to right,#3BA4EF, #076AAF);
+}
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+.fade {
+    -webkit-transition: opacity 250ms linear;
+    -o-transition: opacity 250ms linear;
+    transition: opacity 250ms linear;
+}
+
+.tab_icons {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    margin: 0 10px 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tab_icon_home {background-image: url('../pictures/home/section_2/button_home_it.png');}
+.tab_icon_sb {background-image: url('../pictures/home/section_2/button_small_business.png');}
+.tab_icon_web {background-image: url('../pictures/home/section_2/button_web_dev.png');}
+
+/* 
+------------
+SECTION 3
+------------
+*/
+
+.testimonials_container {width: 90%;}
+.section_3 {margin-top: 60px;}
+.testimonial_header {margin-bottom: 0;}
+.sub_header {margin: 0 10px 0 10px;}
+
+.sub_header h5 {
+    /* color: #fcfcfc; */
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.quote_container {
+    border-radius: 4px;
+    height: 100%;
+    margin:0 5px;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+}
+
+.testimonial_dark {padding: 20px 0;}
+.testimonial_light .quote_container {background-color: #fcfcfc;}
+
+.testimonial_dark .quote_container {
+    background: -webkit-gradient(linear, left top, left bottom, from(#3BA4EF), to(#076AAF));
+    background: -o-linear-gradient(#3BA4EF, #076AAF);
+    background: linear-gradient(#3BA4EF, #076AAF);
+    color: #fcfcfc;
+}
+
+.quote_icon_row {
+    padding: 30px 0 0 30px; 
+    width: 100%;
+}
+
+.testimonial_light .quote_icon {
+    font-size: 3rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3BA4EF), to(#076AAF));
+    background: -o-linear-gradient(#3BA4EF, #076AAF);
+    background: linear-gradient(#3BA4EF, #076AAF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+}
+
+.testimonial_dark .quote_icon {
+    font-size: 3rem;
+    color: #fcfcfc;
+    margin-left: 10px;
+}
+
+.quote_text {
+    margin-top: 15px;
+    width: 80%;
+    text-align: center;
+}
+
+.name_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 95%;
+    text-align: center;
+}
+
+.quote_name {
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 20px;
+    color: #fcfcfc;
+}
+
+.testimonial_light .quote_name {color: #076AAF;}
+
+.quote_company {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #fcfcfc;
+}
+
+.testimonial_light .quote_company {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #505050;
+}
+
+.quote_company:hover {
+    text-decoration: underline;
+    color: #fcfcfc;
+}
+
+.testimonial_light .quote_company:hover {
+    color: #076AAF;
+    text-decoration: none;
+}
+
+/* 
+------------
+SECTION 4 
+------------
+*/
+
+.section_4 {
+    /* max-width: 80%; */
+}
+
+/* 
+----------------
+MEDIA QUERIES
+----------------
+*/
+
+/* 992px Breakpoint - Small Laptops */
+@media (min-width: 992px) {
+    /* 
+    ------------
+    HOME PAGE
+    ------------
+    */
+        .nav-pills-custom .nav-link::before {
+            content: '';
+            display: block;
+            border-top: 8px solid transparent;
+            border-left: 10px solid #076AAF;
+            border-bottom: 8px solid transparent;
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            opacity: 0;
+        }
+}
+
+@media (max-width: 992px) {
+    /* 
+    ------------
+    SECTION 1
+    ------------
+    */
+    .s1_image {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .s1_text {
+        text-align: center;
+    }
+
+    /*
+    ------------
+    SECTION 2
+    ------------
+    */
+
+    .tab_labels {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+    .home_container {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+
+    /*
+    ------------
+    SECTION 3
+    ------------
+    */
+
+    .testimonials {margin-top: 10px;}
+    .testimonials:first-of-type {margin: 0;}
+    .testimonial_light {padding: 0 !important;}
+}
+
+/* 768px Breakpoint - Tablets */
+@media (min-width: 768px) {
+    .navbar-nav a {color: #fcfcfc !important;}
+}
+
+@media (max-width: 768px) {
+    /* 
+    ------------
+    HERO SECTION
+    ------------
+    */
+        /* hero background & container */
+        .hero_container {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-rows: auto 2fr auto;
+            grid-template-rows: auto 2fr auto;
+            height: 60vh !important;
+        }
+
+        .section_hero {
+            height: auto;
+            background-size: cover;
+        }
+
+        /* navbar styling */
+        .center_hero_div {margin-top: 50px;}
+        .down_arrow_row {display: none;}
+
+        /*
+        ------------
+        SECTION 2
+        ------------
+        */
+
+        .tab_content_col {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            text-align: center;
+        }
+
+        .tab_text {margin-top: 10px;}
+        .tab_labels {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+}
+
+/* 576px Breakpoint - Mobile Devices */
+@media (max-width: 576px) {
+    .hero_container {height: 40vh !important;}
+
+    .section_hero {
+        height: auto;
+        background-size:cover;
+    }
+
+    .down_arrow {
+        width: 50px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+/* 400px Breakpoint - Extremely small screens. Prevents navbar wrapping */
+@media (max-width: 400px) {
+    .mobile_hero_text {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+
+    .hero_container {height: 40vh !important;}
+}
+
+@media (max-height: 600px) {
+    .hero_container {
+        min-height: 400px;
+        width: 100vw;
+    }
+
+    .section_hero {
+        background-position: center 40%;
+    }
+
+    .main_logo {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .down_arrow {
+        width: 40px;
+        height: auto;
+    }
+}
