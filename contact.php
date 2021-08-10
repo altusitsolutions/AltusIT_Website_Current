@@ -4,74 +4,6 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 
-<?php
-    $valid_form = false;
-    $message_sent = false;
-    $user_name = $user_company = $user_phone = $user_email = $user_message = "";
-    $name_error = $company_error = $phone_error = $email_error = $message_error = "";
-    // print_r($_POST);
-
-    if(isset($_POST['email']) && $_POST['email'] != "") {
-        $user_name = $_POST['name'];
-        $user_company = $_POST['company'];
-        $user_phone = $_POST['phone'];
-        $user_email = $_POST['email'];
-        $user_message = $_POST['message'];
-
-        if (empty($user_name)) {
-            $name_error = "Name is required";
-            $name_valid = false;
-        } elseif (!preg_match("/^[a-zA-Z ,.'-]+$/", $user_name)) {
-            $name_error = "Please enter a valid full name";
-            $name_valid = false;
-        } else {
-            $name_valid = true;
-        };
-
-        if (empty($user_phone)) {
-            $phone_valid = true;
-        } elseif (!preg_match("/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/", $user_phone) && $user_phone != "") {
-            $phone_error = "Please enter a valid phone number.";
-            $phone_valid = false;
-        } else {
-            $phone_valid = true;
-        };
-
-        if (empty($user_email)){
-            $email_valid = false;
-        } elseif (!preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $user_email) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $email_error = "Please enter a valid email address.";
-            $email_valid = false;
-        } else {
-            $email_valid = true;
-        };
-
-        if (empty($user_message)) {
-            $message_error = "Please enter a message for us.";
-            $message_valid = false;
-        } else {
-            $message_valid = true;
-        };
-
-        if ($name_valid && $phone_valid && $email_valid && $message_valid) {
-            $to = "jpedro@altusit.ca";
-            $subject = "Contact Form Submission - Altus IT Solutions";
-            $body = "";
-
-            $body .= "You've received a contact form submission!" . "\r\n";
-            $body .= "From: " . $user_name . "\r\n";
-            $body .= "Company Name: " . $user_company . "\r\n";
-            $body .= "Phone Number: " . $user_phone . "\r\n";
-            $body .= "Email: " . $user_email . "\r\n";
-            $body .= "Message: " . $user_message . "\r\n";
-
-            mail($to, $subject, $body);
-
-            $message_sent = true;
-        };
-    };  
-?>
-
 <html lang="en">
     <head>
         <!-- Meta tags -->
@@ -172,13 +104,9 @@
             <section class="section_1">
                 <div class="row contact_row">
                     <div class="col-lg-8 contact_col justify-content-center">
-                    <?php
-                        if($message_sent):
-                    ?>
+                    
                         <h3 class="success_message text-center">Thanks! We'll be in touch.</h3>
-                    <?php
-                        else:
-                    ?>
+
                         <form class="px-5" method="POST" id="contact">
                             <p class="text-center">
                                 Fill out the form below to get in touch with us.<br>
@@ -207,9 +135,7 @@
                         
                             <button class="btn btn-block btn_full" type="submit">Send</button>
                         </form>
-                    <?php
-                        endif;
-                    ?>
+                    
                     </div>
                     <div class="col-lg-4 contact_info_col">
                         <p class="info_title">Check out different ways of contacting us below</p>
